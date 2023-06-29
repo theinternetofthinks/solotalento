@@ -1,0 +1,123 @@
+@use '../global' as *;
+@use '../foundation' as *;
+
+.elementor-column {
+	display: block;
+
+}
+
+.elementor-widget-button {
+	a.elementor-button {
+		background: #023b59 !important;
+		border-radius: 16px;
+
+		* {
+			color: #fff !important;
+		}
+	}
+}
+
+.elementor-section {
+	.elementor-inner-section {
+		@media (min-width: 1440px) {
+			display: block;
+			margin: auto;
+			max-width: 1440px;
+		}
+	}
+
+	&.elementor-section-boxed {
+
+		@media (min-width: 1440px) {
+			display: block;
+			margin: auto;
+			max-width: 1440px;
+
+
+		}
+
+		&[class*='bg-'] {
+			@media (min-width: 1440px) {
+				display: block;
+				margin: auto;
+				max-width: 100%;
+			}		
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 0 15px !important;
+
+		.elementor-inner-section {
+			margin-top: 0 !important;
+			padding: 0 !important;
+		}
+
+		.elementor-column-gap-default>.elementor-column>.elementor-element-populated,
+		.elementor-widget-wrap {
+			padding: 10px !important;
+		} 
+	}
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+	@media (min-width: 1299px) { 
+		max-width: 100% !important;
+	}
+
+}
+
+.elementor-heading-title:not(h1) {
+	font-size: 75px !important;
+	font-weight: bold !important;
+	@media (max-width: 1199px) { 
+		font-size: 55px !important;
+	}
+	@media (max-width: 768px) { 
+		font-size: 35px !important;
+	}
+}
+
+.elementor-container.elementor-column-gap-default {
+	gap: 90px;
+
+	@media (max-width:991px) {
+		gap: 0;
+	}
+}
+
+.elementor-icon-box-content {
+	padding: 0 !important;
+}
+
+.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-closed {
+	display: block !important;
+}
+
+
+body {
+	background: #e4e8e9;
+	color: $color-primary;
+	font-family: $font-secondary !important;
+
+	.title,
+	.elementor-heading-title {
+		font-family: 'Poppins', sans-serif !important;
+		// font-family: $font-primary !important;
+		font-size: 40px;
+		@media (max-width: 768px) { 
+			font-size: 30px;
+		}
+	}
+
+	h1.title,
+	h1.elementor-heading-title {
+		font-size: 70px;
+		@media (max-width: 768px) { 
+			font-size: 50px;
+		}
+	}
+}
+
+.elementor-button span {
+	font-family: 'IBM Plex Sans',sans-serif;
+}

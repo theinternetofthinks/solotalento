@@ -1,0 +1,58 @@
+.modal {
+	z-index: 999999999;
+}
+
+.modal-custom-md {
+	max-width: 600px !important;
+}
+
+
+.modal-header {
+	border: 0 !important;
+	display: block;
+	position: relative;
+
+	.close {
+		background: none;
+		border: 0;
+		color: #212121;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+
+		span {
+			font-size: 24px;
+		}
+	}
+}
+
+
+
+.spinner {
+  
+	animation: spin 1s ease infinite;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-left-color: #fff;
+	border-radius: 50%;
+	display: none;
+	height: 16px;
+	margin-right: 10px;
+	top: 3px;
+	width: 16px;
+
+	&.visible {
+		display: block;
+	}
+}
+	
+
+  
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+  
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,45 @@
+.block-product {
+	h3.elementor-heading-title,
+	h2.elementor-heading-title {
+		color: #6f0101;
+		text-transform: uppercase;
+	}
+
+	h3.elementor-heading-title {
+		font-size: 14px !important;
+
+	}
+
+	section {
+		margin-bottom: 30px;
+	}
+
+	img.icons,
+	.icons {
+		img {
+			max-width: 90px;
+		}
+	}
+
+	.text-right {
+		text-align: right;
+	}
+
+	ul {
+		display: inline-block;
+	}
+
+	li {
+		display: inline-block;
+
+		&::after {
+			content: ' | ';
+		}
+
+		&:last-child {
+			&::after {
+				content: '';
+			}
+		}
+	}
+}

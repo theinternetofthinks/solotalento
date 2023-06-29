@@ -1,0 +1,151 @@
+.block-accordeon {
+	h2 {
+		font-size: 50px !important;
+		font-weight: 300 !important;
+		text-transform: uppercase;
+		@media (max-width: 1499px) {
+			font-size: 30px !important;
+
+
+		}
+	}
+
+	.elementor-accordion .elementor-tab-title {
+		display: flex;
+		@media (max-width: 767px) {
+			display: flex;
+		}	
+	}
+
+	.elementor-accordion-item {
+		border: 0 !important;
+		border-bottom: 1px solid #023b59 !important;
+
+		.elementor-accordion-title {
+			color: #22b9d8 !important;
+			display: inline-block;
+			font-family: 'Poppins', sans-serif !important;
+			font-size: 30px;
+			font-weight: 600;
+			margin-left: -45px;
+			text-transform: uppercase;
+			transition: all 0.4s linear;
+			width: 90%;
+			@media (max-width: 1499px) {
+				font-size: 20px;
+			}
+		}
+	
+		.elementor-tab-content {
+			color: #023b59 !important;
+			font-size: 22px !important;
+			font-weight: 300 !important;
+
+
+			p {
+				color: #023b59 !important;
+				font-size: 22px !important;
+				font-weight: 300 !important;
+				@media (max-width: 767px) {
+					font-size: 16px !important;
+				}
+			}
+		} 
+	
+		.elementor-accordion-item {
+			border: 0 !important;
+			border-bottom: 1px solid #023b59 !important;
+		}
+
+		i {
+			background: url('../images/icon-arrow-primary.svg') !important;
+			background-repeat: no-repeat !important;
+			background-size: contain !important;
+			display: block;
+			height: 18px;
+			margin-left: -10px;
+			margin-right: 20px;
+			opacity: 0;
+			overflow: hidden;
+			position: relative;
+			top: 5px;
+			transition: all 0.4s linear;
+			width: 25px;
+
+			&::before {
+				display: none !important;
+			}
+		} 
+
+		.elementor-active,
+		.elementor-accordion-icon-opened,
+		&:hover {
+			.elementor-accordion-title { 
+				margin-left: -10px !important;
+			}
+
+			i {
+				opacity: 1;
+				transform: rotate(90deg);
+
+		
+			} 
+		}
+
+		&:hover { 
+			i {
+				opacity: 1;
+				transform: rotate(0deg);
+			} 
+		}
+	}
+
+	.elementor-accordion-icon-opened {
+		i { 
+			&.fas.fa-minus {
+				display: none !important;
+			}	
+		}
+	}
+
+	&.primary {
+		.elementor-tab-content {
+			color: #fff !important;
+
+			p {
+				color: #fff !important;
+			}
+		} 
+
+		.elementor-accordion-item {
+			border: 0 !important;
+			border-bottom: 1px solid #ffa500 !important;
+		}
+    
+		.elementor-accordion-title {
+			color: #fff !important;
+
+		}
+
+		.elementor-accordion-icon-opened {
+			i {
+				background: url('../images/icon-arrow.svg') !important;
+				background-repeat: no-repeat !important;
+				background-size: contain !important;
+				display: block;
+				height: 18px;
+				margin-right: 20px;
+				overflow: hidden;
+				width: 25px;
+
+				&.fas.fa-minus {
+					display: none !important;
+				}
+
+				&::before {
+					display: none !important;
+				}
+			} 
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.block-description {
+	color: #1d8649;
+	font-family: 'Helvetica Neue LT Std';
+	font-size: 1rem;
+
+	ul {
+		display: block;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	h2 {
+		color: #86bc25;
+		display: inline-block;
+		font-family: 'Helvetica Neue LT Std' !important;
+		font-size: 1rem;
+		font-weight: 600;
+		letter-spacing: 0;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+
+		+ p {
+			display: inline-block;
+			margin-left: 7.5px;
+		}
+	}
+}

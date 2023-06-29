@@ -1,0 +1,53 @@
+@use '../global' as *;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+@font-face {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/fontawesome-webfont.eot');
+	src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/HelveticaNeueLTStd-BdCn.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Helvetica Neue LT Std';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Helvetica Neue LT Std';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff');
+}
+
+$font-primary: 'IBM Plex Sans', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #fff !important;
+	color: #023b59;
+	font-family: $font-primary !important;
+	font-size: 1.6rem;
+}
+

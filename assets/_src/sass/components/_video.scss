@@ -1,0 +1,49 @@
+.video-bg {
+	height: calc(100vh - 180px);
+	overflow: hidden;
+	width: 100%;
+
+	video {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	.caption {
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		margin: auto;
+		margin-top: 0;
+		max-width: 850px;
+		padding: 130px;
+		position: absolute;
+		top: 0;
+
+		> div {
+			margin-top: 40px;
+		}
+
+		@media (max-width: 768px) { 
+			max-width: 90%;
+			padding: 20px;
+		}	
+
+
+		small {
+			color: #fff;
+			font-size: 12px;
+			text-transform: uppercase;
+		} 
+
+		h1 {		
+			color: #fff;
+			display: block;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 50px;
+			margin: auto;
+			max-width: 760px;
+		}
+	}
+}

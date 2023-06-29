@@ -1,0 +1,58 @@
+@use '../global' as *;
+
+.block-text-img-full {
+
+	@media (min-width: 991px) {
+		padding-bottom: 200px;
+		padding-top: 200px;
+	}	
+
+	&::before {
+		background: $light-gray;
+		display: block;
+		height: 300px;
+		left: 0;
+		position: absolute;
+		width: 100vw;
+		@media (min-width: 991px) {
+			content: '';
+			top: -120px;
+		}	
+		
+	}
+
+	.elementor-column {
+		&:first-child {
+			margin-left: 100px;
+		}
+
+		img {
+			margin-right: -15px;
+			@media (min-width: 991px) {
+				margin-top: -200px;
+			}	
+
+		}
+	}
+
+}
+
+.block-img-text-full {
+	padding-bottom: 0;
+	padding-top: 0;
+
+	.elementor-column {
+		&:last-child {
+			margin-right: 100px;
+		}
+
+		img {
+			margin-left: -15px;
+			@media (min-width: 991px) {
+				margin-top: -200px;
+			}	
+		}
+	}
+
+}
+

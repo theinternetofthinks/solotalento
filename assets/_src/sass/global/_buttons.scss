@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.btn {
+	font-size: 0.8rem;
+	line-height: 8px;
+
+	&.btn-primary {
+		background: $color-primary !important;
+		border: 0;
+		color: #fff !important;
+		font-family: 'Cocogoose' !important;
+		max-width: 200px;
+	}	
+
+	&.btn-hightlight {
+		background: $color-hightlight !important;
+		border: 0;
+		color: #fff !important;
+		font-family: 'Cocogoose' !important;
+		font-weight: 100;
+		max-width: 200px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		@media (max-width: 767px) {
+			font-size: 12px;
+		}	
+
+		&:hover {
+			background: $color-hightlight-soft !important;
+		}
+	}	
+
+	&.btn-black {
+		.elementor-button-link {
+			background: #212121 !important;
+			color: #fff !important;	
+		}
+	}	
+
+	&.btn-white {
+		background: #fff !important;
+		color: #000336 !important;
+
+		.elementor-button-link {
+			background: #fff !important;
+			color: #000336 !important;	
+		}
+	}		
+}

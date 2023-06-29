@@ -1,0 +1,12 @@
+.img-background {
+	height: 200px;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+    
+	.elementor-background-overlay {
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: 100%;
+	}
+}

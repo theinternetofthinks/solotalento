@@ -1,0 +1,25 @@
+.block-maps {
+	.elementor-heading-title {
+		border-left: 1px solid #023b59;
+		color: #ffa500 !important;
+		font-size: 30px;
+		margin-left: 50px;
+		padding-left: 10px;
+		position: relative;
+
+		&::before {
+			background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIHZpZXdCb3g9IjAgMCA1OCA1OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUxLjAyMTQgOC43OTI1Nkw1OCAyMS4xMzNMMzYuNzU0IDI5TDU4IDM2Ljg2N0w1MC44NjYzIDQ5LjUxNkwzMy4xODcyIDM1LjYzM0wzNi40NDM5IDU4SDIyLjE3NjVMMjUuMTIzIDM1LjYzM0w3LjQ0Mzg1IDQ5LjgyNDVMMCAzNi43MTI4TDIxLjA5MDkgMjguODQ1N0wwIDIxLjI4NzJMNy4xMzM2OSA4LjYzODMxTDI1LjI3ODEgMjIuNTIxM0wyMi4xNzY1IDBIMzYuNTk4OUwzMy4xODcyIDIyLjUyMTNMNTEuMDIxNCA4Ljc5MjU2WiIgZmlsbD0iIzAyM0I1OSIvPgo8L3N2Zz4K');
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			height: 40px;
+			left: -47px;
+			position: absolute;
+			top: 20px;
+			width: 32px;
+			@media (max-width: 992px) { 
+				top: 0;
+			}
+		}
+	}
+}

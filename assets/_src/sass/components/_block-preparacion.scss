@@ -1,0 +1,22 @@
+.block-preparacion {
+	.elementor-heading-title.elementor-size-default {
+		color: #fff !important;
+	}
+
+	.elementor-icon-list-items {
+		li {
+			align-items: flex-start;
+			display: flex;
+		}
+
+		@media (min-width: 991px) {
+			column-count: 2;
+
+			li {
+				break-inside: avoid-column;
+				overflow: hidden;
+				page-break-inside: avoid; 
+			}
+		}
+	}
+}
